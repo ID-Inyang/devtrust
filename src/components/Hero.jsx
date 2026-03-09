@@ -18,7 +18,9 @@ const Hero = () => {
                     <p className='font-bold text-sm'>NOW IN BETA: AUTOMATED VERIFICATION</p>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">Build and Verify <br /> Developer Credibility</h1>
-                <p className="text-lg w-[500px] text-brandGray text-center mb-8 font-bold">The ultimate platform for data-driven verifivation, deep repo analysis, and verified trust scores</p>
+                    <p className="text-slate-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                        The ultimate platform for data-driven developer verification, deep repo analysis, and verified trust scores.
+                    </p>
             </div>
             <div>
                 <SearchBar />
