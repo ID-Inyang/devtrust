@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'DropShade';
+  src: url('/src/assets/drop_shade/DropShade-Shadow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
