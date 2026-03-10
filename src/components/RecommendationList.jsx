@@ -10,7 +10,7 @@ const RecommendationList = () => {
               Hand-picked developers with the highest ecosystem integrity scores.
             </div>
             <div className="right">
-              <a className="">View All &gt;</a>
+              <a className="text-blue-500">View All &gt;</a>
             </div>
           </div>
       </div>

@@ -13,3 +13,18 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@layer utilities {
+  .animate-shimmer {
+    animation: shimmer 3s linear infinite;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
