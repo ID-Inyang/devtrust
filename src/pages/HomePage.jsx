@@ -13,7 +13,6 @@ const HomePage = () => {
         <Navbar />
         <Hero />
       </div>
-      
     </>
   )
 }
