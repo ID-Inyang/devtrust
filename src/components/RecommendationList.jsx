@@ -1,6 +1,20 @@
 import React from 'react'
 
 const RecommendationList = () => {
+  const developers = {
+    "Jane Doe": {
+      role: "Full Stack Developer",
+      integrityScore: 95 // Example score
+    },
+    "John Smith": {
+      role: "Frontend Developer",
+      integrityScore: 92 // Example score
+    },
+    "Alice Johnson": {
+      role: "Backend Developer",
+      integrityScore: 90 // Example score
+    }
+  }
   return (
     <>
       <div className='w-full max-w-7xl mx-auto px-4 '>
@@ -14,21 +28,15 @@ const RecommendationList = () => {
           </div>
         </div>
         <div className="featured-developers grid grid-cols-3 gap-4">
-          <div className="developer-card bg-[#1e293b] p-4 rounded-lg shadow-md ">
-              <h3 className='text-lg font-semibold text-white mb-2'>Jane Doe</h3>
-              <p className='text-gray-400 text-sm mb-4'>Full Stack Developer</p>
-              <p className='text-gray-300 text-sm'>Ecosystem Integrity Score: 95</p>
-          </div>
-          <div className="developer-card bg-[#1e293b] p-4 rounded-lg shadow-md">
-              <h3 className='text-lg font-semibold text-white mb-2'>John Smith</h3>
-              <p className='text-gray-400 text-sm mb-4'>Frontend Developer</p>
-              <p className='text-gray-300 text-sm'>Ecosystem Integrity Score: 92</p>
-          </div>
-          <div className="developer-card bg-[#1e293b] p-4 rounded-lg shadow-md">
-              <h3 className='text-lg font-semibold text-white mb-2'>Alice Johnson</h3>
-              <p className='text-gray-400 text-sm mb-4'>Backend Developer</p>
-              <p className='text-gray-300 text-sm'>Ecosystem Integrity Score: 90</p>
-          </div>
+          {Object.entries(developers).map(([name, details]) => (
+            <div key={name} className="developer-card bg-gray-800 p-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-white">{name}</h3>
+              <p className="text-gray-400">{details.role}</p>
+              <p className="text-green-500 mt-2">Integrity Score: {details.integrityScore}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10">
         </div>
       </div>
     </>
