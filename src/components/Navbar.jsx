@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
         <nav className="navbar flex items-center justify-between p-4 border-b border-b-1 border-b-[#62727e] text-sm mb-[20px]">
             <div className="navbar-logo">
-                <h1 className='font-dropshade  font-bold'>In Devs We Trust</h1>
+                <h1 className='font-dropshade font-bold'>In Devs We Trust</h1>
             </div>
             <div className="navbar-menu">
                 <ul className="navbar-links flex items-center gap-6 text-brandGray">

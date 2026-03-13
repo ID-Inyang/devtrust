@@ -23,7 +23,7 @@ const trustItems = [
 
   return (
     <>  
-        <div className="bg-[#101727] border-b border-gray-700">
+        <div className="bg-[#101727] bg-opacity-60 border-b border-gray-700">
             <div className='w-full max-w-7xl mx-auto px-4 py-12'>
                 <div className="">
                     <h2 className="text-3xl font-bold  text-white mb-8">Why Trust Matters</h2>
