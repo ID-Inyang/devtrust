@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import DeveloperCard from '../components/DeveloperCard'
-// import RecommendationList from '../components/RecommendationList'
+import TrustSection from '../components/TrustSection'
 import Footer from '../components/Footer'
 
 const HomePage = () => {
@@ -16,7 +16,7 @@ const HomePage = () => {
         <Navbar />
         <Hero />
         <DeveloperCard />
-        
+        <TrustSection />
         <Footer />
       </div>
     </>
