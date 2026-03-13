@@ -25,7 +25,7 @@ const developers = [
     status: "Verified"
   },
     {
-    id: 3,
+    id: 4,
     name: "Javier",
     image: assets.Javier,
     specialty: "AI Researcher",
@@ -44,7 +44,7 @@ const developers = [
               <a className="text-blue-500">View All &gt;</a>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {developers.map((dev) => (
           <div key={dev.id} className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500 transition-all">
             <img 
