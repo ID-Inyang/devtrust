@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import DeveloperCard from '../components/DeveloperCard'
+// import RecommendationList from '../components/RecommendationList'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -12,6 +15,9 @@ const HomePage = () => {
           }}>
         <Navbar />
         <Hero />
+        <DeveloperCard />
+        
+        <Footer />
       </div>
     </>
   )

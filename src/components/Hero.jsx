@@ -11,7 +11,7 @@ const Hero = () => {
     ];
   return (
     <>
-        <div className="hero flex flex-col items-center justify-center h-screen text-center mt-[100px]">
+        <div className="relative w-full max-w-7xl mx-auto px-4 py-16 text-center">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-blue-600/10 blur-[120px] rounded-full z-0"></div>
             <div className="hero-content flex flex-col items-center">
                 <div className="text-[#164dd9] bg-[#0e1c37] p-4 border-none rounded-xl inline-block px-4 py-1 my-6">
@@ -24,10 +24,10 @@ const Hero = () => {
                         The ultimate platform for data-driven developer verification, deep repo analysis, and verified trust scores.
                     </p>
             </div>
-            <div>
+            <div className="search-bar mt-10 w-full max-w-2xl mx-auto">
                 <SearchBar />
             </div>
-            <div className="stats mt-8 space-x-4">
+            <div className="stats mt-10 w-full max-w-2xl mx-auto">
                 <div className="gap-5 flex  items-start">
                     {stats.map((item, index) => (
                     <div key={index} className="stat flex items-center gap-1">
@@ -37,7 +37,6 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
-            <RecommendationList />
         </div>
     </>
   )
