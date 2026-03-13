@@ -23,6 +23,13 @@ const developers = [
     image: assets.ID,
     specialty: "Full Stack Developer",
     status: "Verified"
+  },
+    {
+    id: 3,
+    name: "Javier",
+    image: assets.Javier,
+    specialty: "AI Researcher",
+    status: "Verified"
   }
 ];
   return (
