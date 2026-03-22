@@ -38,9 +38,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
-          <div className="flex justify-between text-brandGray items-center">
+        <div className="flex justify-between text-brandGray items-center">
           <p>© 2026 DevTrust Inc. All rights reserved.</p>
           <div className="flex space-x-4">
+
             {/* Globe icon */}
             <a href="/" aria-label="Global">
               <FaGlobe className="w-5 h-5 hover:text-blue-800" />
